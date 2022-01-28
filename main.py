@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-from importlib.resources import path
 import os
 import shutil
+import logging
+from importlib.resources import path
+from configparser import ConfigParser
 
 # Specify the filepath
 path = 'C:\\Users\\seanc\\Downloads'
@@ -26,3 +28,8 @@ for file in file_list:
         shutil.move(path + '/' + file, path + '/' + ext + '/' + file)
 
 #try block for error handling
+# write to log.txt when encounter an error
+
+# config.ini file will be used for filepath reference https://youtu.be/Gdw0-QGq-z0
+# config = ConfigParser()
+# config.read('config.ini')
