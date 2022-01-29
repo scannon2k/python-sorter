@@ -5,10 +5,11 @@ import logging
 from importlib.resources import path
 from configparser import ConfigParser
 
-# Specify the filepath
-path = 'C:\\Users\\seanc\\Downloads'
+# Specify filepath from config.ini
+config = ConfigParser()
+config.read('config.ini')
+path = config['filepath']['path']
 
-# Create a list of the files in the directory
 file_list = os.listdir(path)
 
 for file in file_list:
@@ -29,7 +30,3 @@ for file in file_list:
 
 #try block for error handling
 # write to log.txt when encounter an error
-
-# config.ini file will be used for filepath reference https://youtu.be/Gdw0-QGq-z0
-# config = ConfigParser()
-# config.read('config.ini')
