@@ -1,6 +1,6 @@
 # Sorter
 
-Sorter is a program designed to orgainze files in a directory into sub-directories based on file type.
+Python script designed to orgainze files in a directory into sub-directories based on file type.
 
 ## Installation
 
