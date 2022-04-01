@@ -4,4 +4,4 @@ Python script designed to orgainze files in a directory into sub-directories bas
 
 ## Usage
 
-Set filepath in the .ini file and run main.py
+Set directory path in config.ini file and run main.py
